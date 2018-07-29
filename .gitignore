@@ -1,0 +1,9 @@
+# File types to ignore
+*iml
+*.pyc
+
+# Files to ignore
+_pychache_
+
+# Directories to ignore
+/.idea
