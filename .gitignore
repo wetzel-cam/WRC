@@ -1,6 +1,9 @@
 # File types to ignore
 *iml
 *.pyc
+*.ppk
+*-ssh-key
+*.wrc
 
 # Files to ignore
 _pychache_
