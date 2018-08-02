@@ -1,5 +1,5 @@
 def save_key(filename, key):
-    key_file = open(filename + '.wrc', 'wb')
+    key_file = open(filename + '.wrc', 'w+b')
     key_file.write(key.encode())
     key_file.flush()
     key_file.close()

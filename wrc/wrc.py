@@ -1,7 +1,7 @@
 """ Script to remotely connect to a minecraft server """
 import urllib3
 import json
-from util.KeyHandler import read_key
+import wrc.util.KeyHandler
 
 # ui system
 http = urllib3.PoolManager()
@@ -9,8 +9,8 @@ json_decoder = json.JSONDecoder()
 json_encoder = json.JSONEncoder()
 
 # make into key management system
-key = read_key('test')
-secret = read_key('test2')
+key = wrc.util.KeyHandler.read_key('test')
+secret = wrc.util.KeyHandler.read_key('test2')
 
 
 # make each option on api a function
